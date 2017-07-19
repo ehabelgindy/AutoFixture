@@ -2,12 +2,18 @@
   <Import Project="..\CommonProperties.props" />
 
   <PropertyGroup>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFrameworks>net45;netstandard15</TargetFrameworks>
     <AssemblyTitle>SemanticComparison</AssemblyTitle>
     <AssemblyName>Ploeh.SemanticComparison</AssemblyName>
     <RootNamespace>Ploeh.SemanticComparison</RootNamespace>
     <Copyright>Copyright © Ploeh 2011</Copyright>
+
+    <DefineConstants Condition=" '$(TargetFramework)'=='net45' ">$(DefineConstants);SYSTEM_RUNTIME_SERIALIZATION;NETFULL</DefineConstants>
   </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)'=='netstandard15' ">
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <CodeAnalysisDictionary Include="CodeAnalysisDictionary.xml" />
