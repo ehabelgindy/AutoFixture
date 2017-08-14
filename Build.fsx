@@ -199,9 +199,9 @@ Target "CopyToReleaseFolder" (fun _ ->
       "Src/Idioms/bin/Release/net45/Ploeh.AutoFixture.Idioms.dll";
       "Src/Idioms/bin/Release/net45/Ploeh.AutoFixture.Idioms.pdb";
       "Src/Idioms/bin/Release/net45/Ploeh.AutoFixture.Idioms.XML";
-      "Src/Idioms.FsCheck/bin/Release/Ploeh.AutoFixture.Idioms.FsCheck.dll";
-      "Src/Idioms.FsCheck/bin/Release/Ploeh.AutoFixture.Idioms.FsCheck.pdb";
-      "Src/Idioms.FsCheck/bin/Release/Ploeh.AutoFixture.Idioms.FsCheck.XML";
+      "Src/Idioms.FsCheck/bin/Release/net45/Ploeh.AutoFixture.Idioms.FsCheck.dll";
+      "Src/Idioms.FsCheck/bin/Release/net45/Ploeh.AutoFixture.Idioms.FsCheck.pdb";
+      "Src/Idioms.FsCheck/bin/Release/net45/Ploeh.AutoFixture.Idioms.FsCheck.XML";
     ]
     let nuGetPackageScripts = !! "NuGet/*.ps1" ++ "NuGet/*.txt" ++ "NuGet/*.pp" |> List.ofSeq
     let releaseFiles = buildOutput @ nuGetPackageScripts
