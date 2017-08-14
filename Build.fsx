@@ -180,9 +180,9 @@ Target "CopyToReleaseFolder" (fun _ ->
       "Src/AutoNSubstitute/bin/Release/net45/Ploeh.AutoFixture.AutoNSubstitute.dll";
       "Src/AutoNSubstitute/bin/Release/net45/Ploeh.AutoFixture.AutoNSubstitute.pdb";
       "Src/AutoNSubstitute/bin/Release/net45/Ploeh.AutoFixture.AutoNSubstitute.XML";
-      "Src/AutoFoq/bin/Release/Ploeh.AutoFixture.AutoFoq.dll";
-      "Src/AutoFoq/bin/Release/Ploeh.AutoFixture.AutoFoq.pdb";
-      "Src/AutoFoq/bin/Release/Ploeh.AutoFixture.AutoFoq.XML";
+      "Src/AutoFoq/bin/Release/net45/Ploeh.AutoFixture.AutoFoq.dll";
+      "Src/AutoFoq/bin/Release/net45/Ploeh.AutoFixture.AutoFoq.pdb";
+      "Src/AutoFoq/bin/Release/net45/Ploeh.AutoFixture.AutoFoq.XML";
       "Src/AutoFixture.xUnit.net/bin/Release/net45/Ploeh.AutoFixture.Xunit.dll";
       "Src/AutoFixture.xUnit.net/bin/Release/net45/Ploeh.AutoFixture.Xunit.pdb";
       "Src/AutoFixture.xUnit.net/bin/Release/net45/Ploeh.AutoFixture.Xunit.XML";
