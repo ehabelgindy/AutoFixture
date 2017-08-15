@@ -69,7 +69,7 @@ Target "PatchAssemblyVersions" (fun _ ->
         buildVersion.fileVersion
         buildVersion.infoVersion
 
-    let filesToPatch = !! "Src/*/Properties/AssemblyInfo.*"
+    let filesToPatch = !! "Src/*/Properties/AssemblyInfo.fs"
                        -- addBakExt "Src/*/Properties/*"
     
     // Backup the original file versions
@@ -88,7 +88,7 @@ Target "PatchAssemblyVersions" (fun _ ->
 )
 
 Target "RestorePatchedAssemblyVersionFiles" (fun _ ->
-    !! (addBakExt "Src/*/Properties/AssemblyInfo.*")
+    !! (addBakExt "Src/*/Properties/AssemblyInfo.fs")
     |> Seq.iter (fun bakFile ->
         let originalPath = bakFile.Substring(0, bakFile.Length - bakFileExt.Length)
 
